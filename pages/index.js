@@ -6,7 +6,7 @@ import PopularRecipes from "../components/PopularRecipes";
 
 export default function Home() {
   return (
-    <div className="text-gray-600 font-body">
+    <div className="text-gray-600 font-body bg-gray-100">
       <NavBar />
       <main className="px-16 py-6">
 
