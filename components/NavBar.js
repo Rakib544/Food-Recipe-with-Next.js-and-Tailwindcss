@@ -1,16 +1,25 @@
 import Link from 'next/link';
+import { useState } from 'react';
+
 const NavBar = () => {
+    const [showDropdown, setShowDropDown] = useState(false)
+
     return (
         <div className="md:col-span-1 md:flex md:justify-end">
             <nav className="text-right">
-                <div>
+                <div className="flex justify-between items-center">
                     <h1 className="font-bold uppercase p-4 border-b border-gray-100">
                         <Link href="/">
                             <a className="hover:text-gray-800">Food App</a>
                         </Link>
                     </h1>
+                    <div className="px-4 cursor-pointer md:hidden" onClick={() => setShowDropDown(!showDropdown)}>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </div>
                 </div>
-                <ul className="text-right mt-6">
+                <ul className={`text-right mt-6 ${showDropdown ? 'block' : 'hidden'} md:block`}>
                     <li className="font-bold my-1">
                         <Link href="/">
                             <a className="flex items-center justify-end px-4 border-r-4 border-red-500">
