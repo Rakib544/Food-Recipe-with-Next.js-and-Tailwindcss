@@ -6,15 +6,16 @@ import PopularRecipes from "../components/PopularRecipes";
 
 export default function Home() {
   return (
-    <div className="text-gray-600">
+    <div className="text-gray-600 font-body">
       <NavBar />
       <main className="px-16 py-6">
-        <div>
+
+        <div className="flex justify-center md:justify-end">
           <Link href="/">
             <a className="text-primary">Login</a>
           </Link>
           <Link href="/">
-            <a className="text-primary">Sign up</a>
+            <a className="text-primary ml-2">Sign up</a>
           </Link>
         </div>
 
@@ -28,7 +29,7 @@ export default function Home() {
           <PopularRecipes />
         </div>
 
-        <div>
+        <div className="flex justify-center">
           <button className="bg-secondary-100 text-secondary-200">
             Load More
           </button>
