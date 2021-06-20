@@ -6,7 +6,7 @@ import PopularRecipes from "../components/PopularRecipes";
 
 export default function Home() {
   return (
-    <div className="text-gray-600 font-body bg-gray-100 grid md:grid-cols-4">
+    <div className="text-gray-600 font-body grid md:grid-cols-4">
       
       <NavBar />
 
@@ -14,10 +14,10 @@ export default function Home() {
 
         <div className="flex justify-center md:justify-end">
           <Link href="/">
-            <a className="text-primary btn md:border-2 md:border-red-500">Log in</a>
+            <a className="text-primary btn md:border-2 md:border-red-500 hover:bg-red-500 hover:text-white">Log in</a>
           </Link>
           <Link href="/">
-            <a className="text-primary ml-2 btn md:border-2 md:border-red-500">Sign up</a>
+            <a className="text-primary ml-2 btn md:border-2 md:border-red-500 hover:bg-red-500 hover:text-white">Sign up</a>
           </Link>
         </div>
 
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
 
         <div className="flex justify-center">
-          <button className="bg-secondary-100 text-secondary-200 btn">
+          <button className=" mt-4 bg-red-500 text-white hover:shadow-lg btn">
             Load More
           </button>
         </div>
