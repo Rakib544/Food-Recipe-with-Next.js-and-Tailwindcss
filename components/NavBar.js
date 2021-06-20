@@ -1,7 +1,7 @@
 import Link from 'next/link';
 const NavBar = () => {
     return (
-        <nav>
+        <nav className="md:col-span-1">
             <div>
                 <h1 className="font-bold uppercase p-4 border-b border-gray-100">
                     <Link href="/">
