@@ -11,10 +11,10 @@ export default function Home() {
       <main className="px-16 py-6">
         <div>
           <Link href="/">
-            <a>Login</a>
+            <a className="text-primary">Login</a>
           </Link>
           <Link href="/">
-            <a>Sign up</a>
+            <a className="text-primary">Sign up</a>
           </Link>
         </div>
 
@@ -29,7 +29,7 @@ export default function Home() {
         </div>
 
         <div>
-          <button>
+          <button className="bg-secondary-100 text-secondary-200">
             Load More
           </button>
         </div>
