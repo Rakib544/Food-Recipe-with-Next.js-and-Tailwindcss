@@ -3,7 +3,7 @@ const NavBar = () => {
     return (
         <nav>
             <div>
-                <h1>
+                <h1 className="font-bold uppercase p-4 border-b border-gray-100">
                     <Link href="/">
                         <a>Food App</a>
                     </Link>
